@@ -21,6 +21,11 @@ export default class CustomerList extends LightningElement {
         } else if (value.data) {
             this.customers = value.data;
         }
+    
+    }
+
+    handleSelect(event) {
+        console.log(JSON.stringify(event.detail));
     }
     
 }
